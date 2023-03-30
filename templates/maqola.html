@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style/style.css' %}">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <title>Maqola 1</title>
+</head>
+<body>
+    <div class="container">
+        <h1>2021 June</h1>
+        <div class="row">
+            <h1>{{maqola.sarlavha}}</h1>
+            <div class="col-12">
+                <img src="{{maqola.rasm.url}}" alt="" width="400">
+                <p>{{maqola.matni}}</p>
+            </div>
+        </div>
+        <div class="row footer">
+            <p>© 2021 azimjon.com</p>
+        </div>
+    </div>
+</body>
+</html>
